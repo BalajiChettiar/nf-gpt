@@ -4,13 +4,16 @@
 
 import Body from "../src/components/Body"
 import Header from "../src/components/Header"
+import {Provider} from "react-redux"
+import appStore from "./utils/appStore"
 
 function App() {
   
 
   return (<>
-   
-   <Body></Body></>
+   <Provider store={appStore}>
+   <Body></Body> </Provider></>
+  
   )
 }
 
